@@ -39,13 +39,6 @@ Now you can visit [`localhost:4000`](http://localhost:4000) or
   
 # TODO
 
-- [ ] git config --local (login as `naramore`, not "Michael Naramore" + "mjnarao@us.ibm.com")
-- [ ] re-create `naramore/ex_pathom`
-  - [ ] add new origin
-  - [ ] https://inch-ci.org/help/webhook
-  - [ ] enable dependabot
-  - [ ] add codecov token to secrets
-  - [ ] gitguardian setup?
 - [ ] add elixir-ls & codetour to .gitpod.yml
 - [ ] setup docker-compose.yml
 - [ ] setup swarm & libcluster
