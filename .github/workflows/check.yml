@@ -19,6 +19,13 @@ jobs:
           key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
       - run: mix deps.get
       - run: mix compile --warnings-as-errors
+      - run: mix coveralls.json
+        if: always()
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./cover/excoveralls.json
+        if: always()
       - run: mix format --check-formatted
         if: always()
       - run: mix sobelow --config
@@ -27,9 +34,3 @@ jobs:
         if: always()
       - run: mix dialyzer
         if: always()
-      - run: mix coveralls.json
-        if: always()
-      - uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./cover/excoveralls.json
