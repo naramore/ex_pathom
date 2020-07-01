@@ -1,0 +1,20 @@
+image:
+  file: .gitpod.dockerfile
+tasks:
+  - init: mix do local.hex --force, local.rebar --force
+ports:
+  - port: 4000
+    onOpen: notify
+  - port: 4001
+    onOpen: notify
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    addCheck: true
+    addComment: true
+vscode:
+  extensions:
+    - JakeBecker.elixir-ls@0.5.0:oeio1RLVglNG5w0Whq1KAg==
+    - vsls-contrib.codetour@0.0.34:3JQNbNcp4yquYpqkpvlPag==
