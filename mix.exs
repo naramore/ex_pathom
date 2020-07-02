@@ -95,7 +95,6 @@ defmodule ExPathom.MixProject do
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.12", only: [:dev, :test]},
       {:sobelow, "~> 0.10", only: [:dev, :test]},
-      {:inch_ex, github: "rrrene/inch_ex", only: [:dev, :test]},
       {:ex_doc, "~> 0.22", only: :dev, runtime: false},
       {:boundary, "~> 0.4", runtime: false},
       {:blocked, "~> 0.10"},

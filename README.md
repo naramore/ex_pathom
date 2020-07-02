@@ -2,7 +2,6 @@
 
 # ExPathom
 
-[![Inline docs](http://inch-ci.org/github/naramore/ex_pathom.svg?branch=master)](http://inch-ci.org/github/naramore/ex_pathom)
 [![Tests](https://github.com/naramore/ex_pathom/workflows/test/badge.svg)](https://github.com/naramore/ex_pathom/actions)
 [![Analyses](https://github.com/naramore/ex_pathom/workflows/check/badge.svg)](https://github.com/naramore/ex_pathom/actions)
 [![codecov](https://codecov.io/gh/naramore/ex_pathom/branch/master/graph/badge.svg?token=)](https://codecov.io/gh/naramore/ex_pathom)
@@ -10,22 +9,16 @@
 
 [Pathom](https://github.com/wilkerlucio/pathom) in Elixir.
 
-## Getting Started
+## Getting Started via Gitpod
 
-[Install Elixir](https://elixir-lang.org/install.html)
-
-**OR**
-
-[Use Gitpod](https://www.gitpod.io/docs/getting-started/)
-
-To start your Phoenix server:
-
-  * Install dependencies with `mix setup`
-  * Start Phoenix endpoint with `mix phx.server` or `iex -S mix phx.server` (to start the server w/ an IEx REPL)
-
-Now you can visit [`localhost:4000`](http://localhost:4000) or
-[`https://localhost:4001`](https://localhost:4001) from your browser.
-
+  * Open in Gitpod: https://gitpod.io/#https://github.com/naramore/ex_pathom
+  * Login w/ GitHub (requires GitHub account) & wait for your dev environment to load...
+  * Run in Terminal: `mix setup && iex -S mix phx.server`
+  * Wait for deps + compile...
+  * Notifications should have appeared: open port `4000` in browser (or preview).
+  * *(Optional)* Click on the `LiveDashboard` link (in the top right corner)
+  * ...
+  * Profit
 
 ## Learn more
 
@@ -39,9 +32,10 @@ Now you can visit [`localhost:4000`](http://localhost:4000) or
   
 # TODO
 
+- [ ] https support in gitpod: https://github.com/gitpod-io/gitpod/issues/1594
+- [ ] figure out how to make InchCI work? maybe?
 - [ ] add elixir-ls & codetour to .gitpod.yml
-- [ ] setup docker-compose.yml
-- [ ] setup swarm & libcluster
+- [ ] configure swarm & libcluster
 - [ ] update dialyzer, credo, & sobelow to ignore less & fix the underlying problems
 - [ ] liveview :digraph viewer + editor:
   - [ ] search, filter, pathing (via highlighting)
