@@ -1,0 +1,36 @@
+version: 2
+updates:
+- package-ecosystem: mix
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: ex_doc
+    versions:
+    - 0.23.0
+    - 0.24.0
+    - 0.24.1
+  - dependency-name: floki
+    versions:
+    - 0.29.0
+    - 0.30.0
+  - dependency-name: sobelow
+    versions:
+    - 0.11.0
+  - dependency-name: credo
+    versions:
+    - 1.5.4
+  - dependency-name: excoveralls
+    versions:
+    - 0.13.4
+  - dependency-name: phoenix
+    versions:
+    - 1.5.7
+  - dependency-name: boundary
+    versions:
+    - 0.7.1
+  - dependency-name: plug_cowboy
+    versions:
+    - 2.4.1
